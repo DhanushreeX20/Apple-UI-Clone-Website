@@ -7,7 +7,7 @@ import OfferBanner from './components/Offerbanner'
 import Hero from './components/Hero'
 import DoubleBan from './components/DoubleBan'
 import Filmban from './components/Filmban'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 
 

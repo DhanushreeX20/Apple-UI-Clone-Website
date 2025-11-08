@@ -3,7 +3,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f5f5f7] text-[#6e6e73] text-[12px] leading-relaxed">
+    <Footer className="bg-[#f5f5f7] text-[#6e6e73] text-[12px] leading-relaxed">
       {/* ---------- Top Footer Paragraph ---------- */}
       <div className="max-w-6xl mx-auto px-5 py-6 border-b border-gray-300">
         <p>
@@ -203,7 +203,7 @@ const Footer = () => {
   </div>
 </div>
 
-    </footer>
+    </Footer>
   )
 }
 
