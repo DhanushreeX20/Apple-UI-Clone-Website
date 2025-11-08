@@ -1,7 +1,7 @@
  function OfferBanner() {
   return (
-    <div className="w-full bg-[#1D1D1F] text-center  px-4 py-4">
-      <p className="text-gray-300 text-sm text-center">
+    <div className="w-full bg-[#1D1D1F] text-center pt-[60px] px-4 py-4">
+      <p className="text-gray-300 text-sm text-center pt-2">
         <span className="font-bold">Get up to ₹10000 instant cashback on your favourite products with eligible cards.Plus up to 6 months of No Cost EMI.</span>
  
         <a 

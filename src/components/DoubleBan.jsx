@@ -9,7 +9,8 @@ import img6 from "../assets/db1.jpg";
 const gridItems = [
   {
     img: img1,
-    title: "Apple Watch Series 11",
+    titleImg:"https://www.apple.com/v/home/ci/images/logos/apple-watch-series-11/promo_logo_apple_watch_series_11_preorder__fl4pzqrs45me_small_2x.png",
+    title: "",
     subtitle: "The ultimate watch for a healthy life.",
   },
   {
@@ -29,12 +30,14 @@ const gridItems = [
   },
   {
     img: img5,
-    title: "iPhone Trade-In",
+    titleImg:"https://www.apple.com/v/home/ci/images/logos/iphone-tradein/promo_logo_iphone_tradein__7y3gtai5az66_small_2x.png",
+    title: "",
     subtitle: "Upgrade your iPhone with Trade-in program.",
   },
   {
     img: img6,
-    title: "Apple Watch Series 11",
+    titleImg:"https://www.apple.com/v/home/ci/images/logos/apple-watch-series-11/promo_logo_apple_watch_series_11_preorder__fl4pzqrs45me_small_2x.png",
+    title: "",
     subtitle: "The ultimate watch for a healthy life.",
   },
 ];
@@ -47,7 +50,8 @@ function DoubleBan() {
           <div key={index} className="bg-[#F5F5F7] shadow-lg overflow-hidden flex flex-col">
 
             <div className="p-4 text-center flex flex-col items-center gap-3">
-              <h2 className="text-3xl font-bold">{item.title}</h2>
+              <img src={item.titleImg} className="w-[220px] md:w-[320px] object-contain"/>
+              <h2 className="text-4xl font-bold">{item.title}</h2>
               <p className="text-gray-700">{item.subtitle}</p>
               <div className="flex gap-2 mt-2">
                 <button className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-full text-sm font-medium">

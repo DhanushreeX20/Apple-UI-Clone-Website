@@ -149,34 +149,60 @@ const Footer = () => {
 
       </div>
 
-      {/* ---------- Bottom Footer ---------- */}
-      <div className="max-w-6xl mx-auto px-5 py-6 text-xs text-gray-500">
-        <p className="mb-2">
-          More ways to shop: <a href="#" className="text-blue-600 underline">Find an Apple Store</a> or
-          <a href="#" className="text-blue-600 underline"> other retailer</a> near you. Or call <a href="#" className="text-blue-600 underline">000800 040 1966.</a> 
-        </p>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between border-t border-gray-300 pt-4 mt-3">
-          <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+    {/* ---------- Bottom Footer ---------- */}
+<div className="max-w-6xl mx-auto px-5 py-6 text-xs text-gray-500">
 
-          <ul className="flex flex-wrap gap-3 mr-80 mt-2  md:mt-0">
-            <li></li>
-            <li className="hover:underline"><a href="#">Privacy Policy</a></li>
-            <li>|</li>
-            <li className="hover:underline"><a href="#">Terms of Use</a></li>
-            <li>|</li>
-            <li className="hover:underline"><a href="#">Sales Policy</a></li>
-            <li>|</li>
-            <li className="hover:underline"><a href="#">Legal</a></li>
-            <li>|</li>
-            <li className="hover:underline"><a href="#">Site Map</a></li>
-           </ul>
-           
-            <ul>
-            <li className="hover:underline cursor-pointer mr-10">India</li>
-          </ul>
-          
-        </div>
-      </div>
+  {/* Line 1 — same on all screens */}
+  <p className="mb-3">
+    More ways to shop: <a href="#" className="text-blue-600 underline">Find an Apple Store</a> or
+    <a href="#" className="text-blue-600 underline"> other retailer</a> near you. 
+    Or call <a href="#" className="text-blue-600 underline">000800 040 1966.</a>
+  </p>
+
+  <div className="border-t border-gray-300 pt-4">
+
+    {/* ✅ SMALL SCREEN LAYOUT (3 lines) */}
+    <div className="flex flex-col mb-4 md:hidden">
+      {/* Line 2 */}
+      <p className="mb-1">Copyright © 2025 Apple Inc. All rights reserved.</p>
+      <p className="hover:underline cursor-pointer mb-3">India</p>
+
+      {/* Line 3 */}
+      <ul className="flex flex-wrap gap-3 text-gray-500">
+        <li className="hover:underline"><a href="#">Privacy Policy</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Terms of Use</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Sales Policy</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Legal</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+
+    {/* ✅ DESKTOP VERSION (md+) — your original alignment */}
+    <div className="hidden md:flex md:items-center md:justify-between">
+      <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+
+      <ul className="flex flex-wrap gap-3">
+        <li className="hover:underline"><a href="#">Privacy Policy</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Terms of Use</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Sales Policy</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Legal</a></li>
+        <li>|</li>
+        <li className="hover:underline"><a href="#">Site Map</a></li>
+      </ul>
+
+      <p className="hover:underline cursor-pointer">India</p>
+    </div>
+
+  </div>
+</div>
+
     </footer>
   )
 }
